@@ -1,0 +1,109 @@
+.brand{
+  text-align: center;
+}
+
+.title{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 56px;
+  color: white;
+  margin: 0 auto;
+}
+
+.title:hover{
+  font-size: 64px;
+  color: white;
+  text-shadow: 1px 1px goldenrod;
+}
+
+.subtitle{
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+  color: white;
+}
+
+.follow{
+  padding: 20px;
+  float: right;
+}
+
+.follow:hover{
+  cursor: pointer;
+  color: lightgray;
+  text-shadow: 0.5px 0.5px goldenrod;
+}
+
+.about{
+  padding: 20px;
+  float: left;
+}
+
+.text{
+  font-size: 26px;
+  color: white;
+  text-shadow: 0.5px 0.5px green;
+  margin-right: 30px;
+}
+
+.text:hover{
+  font-size: 28px;
+  color: goldenrod;
+  text-shadow: 0.5px 0.5px white;
+}
+
+.jumbotron{
+  box-shadow: 0px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  height: 527px;
+}
+
+.footer{
+  position: fixed;
+}
+
+#body{
+  background-image: url('http://www.tokkoro.com/thumbs/2935635-nature-macro-cannabis-plants___landscape-nature-wallpapers.jpg');
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner{
+  text-align: center;
+  font-size: 20px;
+  color: white
+}
+
+.img{
+  height: 400px;
+  width: 500px
+}
+
+.icon{
+  color: black
+}
+
+#jumbo{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cardd{
+  margin: 0 auto;
+  padding: 0
+}
+
+#imagen{
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+}
+
+.img_definition{
+  text-align: center;
+}
+
+.read{
+  float: right;
+}
+
+.footer{
+   z-index: -1;
+}
