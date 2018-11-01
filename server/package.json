@@ -1,0 +1,17 @@
+{
+  "name": "MERN_J's_Budz_3.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-yoga": "^1.16.7",
+    "mongoose": "^5.3.6",
+    "nodemon": "^1.18.4"
+  }
+}
