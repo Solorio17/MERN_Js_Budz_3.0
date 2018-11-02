@@ -10,7 +10,7 @@ import Budz from './components/budz';
 import Dabz from './components/dabz';
 import Ediblez from './components/ediblez';
 import Drinkz from './components/drinkz';
-
+import NavBar from './components/navbar';
 
 const client = new ApolloClient({
   uri: "http://localhost:4000"
@@ -20,35 +20,38 @@ const client = new ApolloClient({
    render(){
      return (
        <Router>
-         <Switch>
-           <Route path="/" exact render={
-               ()=>{
-                 return (<Home /> );
-               }
-             }/>
-           <Route path="/budz" exact render={
-               ()=>{
-                 return (<Budz /> );
-               }
-             }/>
-           <Route path="/dabz" exact render={
-               ()=>{
-                 return (<Dabz /> );
-               }
-             }/>
-             <Route path="/ediblez" exact render={
+         <div>
+           <NavBar/>
+           <Switch>
+             <Route path="/" exact render={
                  ()=>{
-                   return (<Ediblez /> );
+                   return (<Home /> );
                  }
                }/>
-           <Route path="/drinkz" exact render={
-               ()=>{
-                 return (<Drinkz /> );
-               }
-             }/>
+             <Route path="/budz" exact render={
+                 ()=>{
+                   return (<Budz /> );
+                 }
+               }/>
+             <Route path="/dabz" exact render={
+                 ()=>{
+                   return (<Dabz /> );
+                 }
+               }/>
+               <Route path="/ediblez" exact render={
+                   ()=>{
+                     return (<Ediblez /> );
+                   }
+                 }/>
+             <Route path="/drinkz" exact render={
+                 ()=>{
+                   return (<Drinkz /> );
+                 }
+               }/>
 
-           <Route render={() => { return (<h3>Route not found!</h3>)}}/>
+             <Route render={() => { return (<h3>Route not found!</h3>)}}/>
          </Switch>
+        </div>
        </Router>
      );
    }
