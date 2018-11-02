@@ -107,3 +107,47 @@
 .footer{
    z-index: -1;
 }
+
+
+/* Budz interface */
+
+.budImage{
+  width: 100px;
+  height: 250px;
+}
+
+#carta{
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  background-color: #f7f4f4;
+}
+
+.budStrain{
+  font-family: cursive;
+  color: green;
+  font-size: 22px;
+  text-shadow: 0.5px 0.5px goldenrod;
+}
+
+.budStrain:hover{
+  font-family: cursive;
+  color: green;
+  font-size: 24px;
+  text-shadow: 0.8px 0.8px goldenrod;
+}
+
+.budType{
+  color: #48027a;
+  font-weight: bold;
+}
+
+.budTHC{
+  color: #04458c;
+  font-weight: bold;
+}
+
+.budCBD{
+  color: #87081b;
+  font-weight: bold;
+}
