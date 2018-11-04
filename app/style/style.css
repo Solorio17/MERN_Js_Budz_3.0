@@ -112,12 +112,11 @@
 /* Budz interface */
 
 .budImage{
-  width: 100px;
-  height: 250px;
+  width: 290px;
+  height: 200px;
 }
 
 #carta{
-  display: inline-block;
   margin: 0 auto;
   margin-bottom: 5px;
   background-color: #f7f4f4;
@@ -150,4 +149,8 @@
 .budCBD{
   color: #87081b;
   font-weight: bold;
+}
+
+#cardInfo{
+  text-align: left;
 }
