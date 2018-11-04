@@ -5,24 +5,17 @@ import { graphql } from 'react-apollo';
 const BudQuery = gql`
 {
   budList{
-    strain
-    type
-    thc
-    cbd
-    image
+    budStrain
+    budType
+    budTHC
+    budCBD
+    budImage
     id
   }
 }
 `;
 
 class Budz extends Component{
-
-  heelo = () =>{
-    return(
-      <h1>Hello</h1>
-    )
-  }
-
   render(){
     const {data: {loading, budList}} = this.props;
     if(loading){
@@ -30,21 +23,26 @@ class Budz extends Component{
     }
 
       const listOfBudz = budList.map(bud =>(
-          <div className="row">
-              <div className="card col-6" id="carta">
-                <img className="card-img-top budImage" ></img>
-                <div className="card-body">
-                  <h5 className="card-title lead">Strain Name: <span className="budStrain">{bud.strain}</span></h5>
-                  <p className="card-text lead">Type: <span className="budType">{bud.type}</span></p>
-                  <p className="card-text lead">THC%: <span className="budTHC">{bud.thc}</span></p>
-                  <p className="card-text lead">CBD%: <span className="budCBD">{bud.cbd}</span></p>
+          <div className="container">
+            <div className="card" id="carta">
+              <div className="row">
+                <div className="col-md-4">
+                    <img src={bud.budImage} className="budImage"></img>
+                  </div>
+                  <div className="col-md-8" id="cardInfo">
+                    <div className="card-block">
+                      <h5 className="card-title lead">Strain Name: <span className="budStrain">{bud.budStrain}</span></h5>
+                      <p className="card-text lead">Type: <span className="budType">{bud.budType}</span></p>
+                      <p className="card-text lead">THC%: <span className="budTHC">{bud.budTHC}</span></p>
+                      <p className="card-text lead">CBD%: <span className="budCBD">{bud.budCBD}</span></p>
+                    </div>
+                  </div>
                 </div>
               </div>
-          </div>
+            </div>
       ))
 
     return(
-      this.heelo,
       listOfBudz
     )
   }
