@@ -53,8 +53,6 @@ const typeDefs = `
     dabImage: String!
   }
 
-
-
   type Mutation{
     createBud(budStrain: String!, budType: String!, budTHC: String!, budCBD: String!, budImage: String!): budType
     updateBud(id: ID!, budImage: String!): Boolean
@@ -92,7 +90,7 @@ const resolvers = {
       await dabz.save();
       return dabz;
     },
-    updateDab: async (_, {id, image}) =>{
+    updateDab: async (_, {id, dabImage}) =>{
       await Dab.findByIdAndUpdate(id, { dabImage});
       return true;
     },
