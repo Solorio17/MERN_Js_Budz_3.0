@@ -5,12 +5,12 @@ import Route from 'react-router-dom/Route';
 import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from 'react-apollo';
 
-import Home from './components/home';
-import Budz from './components/budz';
-import Dabz from './components/dabz';
-import Ediblez from './components/ediblez';
-import Drinkz from './components/drinkz';
 import NavBar from './components/navbar';
+import Home from './components/home';
+import Budz from './components/budz/budz';
+import Dabz from './components/dabz/dabz';
+import Ediblez from './components/ediblez/ediblez';
+import Drinkz from './components/drinkz/drinkz';
 
 const client = new ApolloClient({
   uri: "http://localhost:4000"
